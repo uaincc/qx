@@ -5,6 +5,10 @@
 模板`qx.conf`配置文件中只有一个本地【谷歌重定向】重写
 如需要更多重写分流可以在本库中的 `rewrite` | `rules` 目录中自行添加
 
+QX订阅地址 `https://raw.githubusercontent.com/uaincc/qx/main/qx.conf`
+
+如无环境访问该订阅可使用 `https://uain.cc/fun/qx.conf`
+
 ## rewrite
 > 重写目录
 
