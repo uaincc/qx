@@ -5,9 +5,11 @@
 模板`qx.conf`配置文件中只有一个本地【谷歌重定向】重写
 如需要更多重写分流可以在本库中的 `rewrite` | `rules` 目录中自行添加
 
-QX订阅地址 `https://raw.githubusercontent.com/uaincc/qx/main/qx.conf`
+QX订阅地址
+`https://raw.githubusercontent.com/uaincc/qx/main/qx.conf`
 
-如无环境访问该订阅可使用 `https://uain.cc/fun/qx.conf`
+如无环境访问该订阅可使用
+`https://gh-proxy.com/https://raw.githubusercontent.com/uaincc/qx/main/qx.conf`
 
 ## rewrite
 > 重写目录
@@ -19,10 +21,5 @@ QX订阅地址 `https://raw.githubusercontent.com/uaincc/qx/main/qx.conf`
 > 分流目录
 
 通常这个里面有 【苹果服务】 【全球加速】 【国内IP】
-本人不需要 故删除 需要可以在`[filter_remote]`中自动添加
-```
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list, tag=苹果服务, force-policy=苹果服务, update-interval=172800, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Proxy.list, tag=全球加速, force-policy=全球加速, update-interval=172800, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list, tag=国内网站, force-policy=direct, update-interval=172800, opt-parser=true, enabled=true
-```
+本人不需要 故删除 需要可以在`[filter_remote]`中开启
 此目录暂时只有一个 【屏蔽IOS更新】分流，不定更新。
