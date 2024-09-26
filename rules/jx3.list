@@ -1,7 +1,7 @@
 # 剑网3无界
-DOMAIN,cgi.connect.qq.com,REJECT
-DOMAIN,sh-jxsj.xgsdk.com,REJECT
-DOMAIN,sdkserver.seasungame.com,REJECT
-DOMAIN,xgdata.xgsdk.com,REJECT
-DOMAIN,xg-flow.xoyo.com,REJECT
-DOMAIN,zyxm.testplus.cn,REJECT
+DOMAIN,cgi.connect.qq.com,DIRECT
+DOMAIN,sh-jxsj.xgsdk.com,DIRECT
+DOMAIN,sdkserver.seasungame.com,DIRECT
+DOMAIN,xgdata.xgsdk.com,DIRECT
+DOMAIN,xg-flow.xoyo.com,DIRECT
+DOMAIN,zyxm.testplus.cn,DIRECT
