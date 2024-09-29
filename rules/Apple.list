@@ -37,7 +37,7 @@ HOST,apple.com.akadns.net,Apple
 HOST,appleworldwidedeveloper.hb-api.omtrdc.net,Apple
 HOST,appleworldwidedeveloper.sc.omtrdc.net,Apple
 # APP
-HOST,apps.mzstatic.com,Apple
+# HOST,apps.mzstatic.com,Apple
 HOST,appstoreconnect.apple.com,Apple
 HOST,apptrailers.itunes.apple.com,Apple
 # HOST,bag.itunes.apple.com,Apple
@@ -93,7 +93,7 @@ HOST,e16991.b.akamaiedge.net,Apple
 HOST,edge.apple,Apple
 HOST,experiments.apple.com,Apple
 HOST,fides-pol.apple.com,Apple
-HOST,gateway.icloud.com,Apple
+# HOST,gateway.icloud.com,Apple
 HOST,gs-loc-cn.apple.com,Apple
 HOST,gs-loc.apple.com,Apple
 HOST,gsp10-ssl-cn.ls.apple.com,Apple
@@ -190,7 +190,7 @@ HOST,seed-sequoia.siri.apple.com,Apple
 HOST,seed-swallow.siri.apple.com,Apple
 HOST,seed.siri.apple.com,Apple
 HOST,sequoia.apple.com,Apple
-HOST,sf-api-token-service.itunes.apple.com,Apple
+# HOST,sf-api-token-service.itunes.apple.com,Apple
 HOST,sh-pod2-smp-device.apple.com,Apple
 HOST,shazam-insights.cdn-apple.com,Apple
 HOST,smp-device-content.apple.com,Apple
@@ -365,7 +365,7 @@ HOST-SUFFIX,apple.co.mz,Apple
 HOST-SUFFIX,apple.co.nz,Apple
 HOST-SUFFIX,apple.co.th,Apple
 HOST-SUFFIX,apple.co.uk,Apple
-HOST-SUFFIX,apple.com,Apple
+# HOST-SUFFIX,apple.com,Apple
 HOST-SUFFIX,apple.com.af,Apple
 HOST-SUFFIX,apple.com.au,Apple
 HOST-SUFFIX,apple.com.bo,Apple
@@ -1790,7 +1790,7 @@ HOST-SUFFIX,icloud-content.com,Apple
 HOST-SUFFIX,icloud-isupport.com,Apple
 HOST-SUFFIX,icloud.ch,Apple
 HOST-SUFFIX,icloud.com,Apple
-HOST-SUFFIX,icloud.com.cn,Apple
+# HOST-SUFFIX,icloud.com.cn,Apple
 HOST-SUFFIX,icloud.de,Apple
 HOST-SUFFIX,icloud.ee,Apple
 HOST-SUFFIX,icloud.fi,Apple
