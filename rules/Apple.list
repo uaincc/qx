@@ -9,7 +9,7 @@
 # IP-CIDR: 10
 # USER-AGENT: 23
 # TOTAL: 1872
-HOST,apps.apple.com,Apple
+# HOST,apps.apple.com,Apple
 HOST,a1.mzstatic.com,Apple
 HOST,a2.mzstatic.com,Apple
 HOST,a3.mzstatic.com,Apple
@@ -17,8 +17,8 @@ HOST,a4.mzstatic.com,Apple
 HOST,a5.mzstatic.com,Apple
 HOST,adcdownload.apple.com,Apple
 HOST,adcdownload.apple.com.akadns.net,Apple
-HOST,amp-api-search-edge.apps.apple.com,Apple
-HOST,amp-api.apps.apple.com,Apple
+# HOST,amp-api-search-edge.apps.apple.com,Apple
+# HOST,amp-api.apps.apple.com,Apple
 HOST,amp-api.media.apple.com,Apple
 # APP
 # HOST,api-edge.apps.apple.com,Apple
@@ -33,11 +33,11 @@ HOST,appldnld.apple.com.edgesuite.net,Apple
 HOST,appldnld.g.aaplimg.com,Apple
 HOST,apple-events.akamaized.net,Apple
 HOST,apple.com.akadns.net,Apple
-HOST,appleid.cdn-apple.com,Apple
+# HOST,appleid.cdn-apple.com,Apple
 HOST,appleworldwidedeveloper.hb-api.omtrdc.net,Apple
 HOST,appleworldwidedeveloper.sc.omtrdc.net,Apple
 # APP
-# HOST,apps.mzstatic.com,Apple
+HOST,apps.mzstatic.com,Apple
 HOST,appstoreconnect.apple.com,Apple
 HOST,apptrailers.itunes.apple.com,Apple
 # HOST,bag.itunes.apple.com,Apple
@@ -77,8 +77,8 @@ HOST,cma.itunes.apple.com,Apple
 HOST,cn-smp-paymentservices.apple.com,Apple
 HOST,communities.apple.com,Apple
 HOST,configuration.apple.com,Apple
+HOST,configuration.apple.com.akadns.net,Apple
 # 基础
-# HOST,configuration.apple.com.akadns.net,Apple
 # HOST,courier-push-apple.com.akadns.net,Apple
 HOST,crl-lb.apple.com.akadns.net,Apple
 HOST,crl.apple.com,Apple
@@ -157,7 +157,7 @@ HOST,lookup-api.apple.com.edgekey.net,Apple
 HOST,maps.apple.com,Apple
 HOST,mesu-cdn.apple.com.akadns.net,Apple
 HOST,mesu-china.apple.com.akadns.net,Apple
-HOST,mesu.apple.com,Apple
+# HOST,mesu.apple.com,Apple
 HOST,ml.cdn-apple.com,Apple
 HOST,music.apple.com,Apple
 HOST,ocsp-lb.apple.com.akadns.net,Apple
