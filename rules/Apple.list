@@ -25,7 +25,7 @@ HOST,amp-api.media.apple.com,Apple
 HOST,api-p-ap-c.smoot.apple.com,Apple
 HOST,api-p-ap-d.smoot.apple.com,Apple
 HOST,api-p-ap-e.smoot.apple.com,Apple
-HOST,api.apps.apple.com,Apple
+# HOST,api.apps.apple.com,Apple
 HOST,api.smoot.apple.cn,Apple
 HOST,app-site-association.cdn-apple.com,Apple
 HOST,appldnld.apple.com,Apple
@@ -96,25 +96,25 @@ HOST,fides-pol.apple.com,Apple
 # HOST,gateway.icloud.com,Apple
 HOST,gs-loc-cn.apple.com,Apple
 HOST,gs-loc.apple.com,Apple
-HOST,gsp10-ssl-cn.ls.apple.com,Apple
-HOST,gsp12-cn.ls.apple.com,Apple
-HOST,gsp13-cn.ls.apple.com,Apple
-HOST,gsp4-cn.ls.apple.com,Apple
-HOST,gsp4-cn.ls.apple.com.edgekey.net,Apple
-HOST,gsp4-cn.ls.apple.com.edgekey.net.globalredir.akadns.net,Apple
-HOST,gsp5-cn.ls.apple.com,Apple
-HOST,gsp85-cn-ssl.ls.apple.com,Apple
-HOST,gspe11-2-cn-ssl.ls.apple.com,Apple
-HOST,gspe12-cn-ssl.ls.apple.com,Apple
-HOST,gspe19-2-cn-ssl.ls.apple.com,Apple
-HOST,gspe19-cn-ssl.ls.apple.com,Apple
-HOST,gspe19-cn.ls-apple.com.akadns.net,Apple
-HOST,gspe19-cn.ls.apple.com,Apple
-HOST,gspe21-ssl.ls.apple.com,Apple
-HOST,gspe21.ls.apple.com,Apple
-HOST,gspe35-ssl.ls.apple.com,Apple
-HOST,gspe79-cn-ssl.ls.apple.com,Apple
-HOST,gspe85-cn-ssl.ls.apple.com,Apple
+# HOST,gsp10-ssl-cn.ls.apple.com,Apple
+# HOST,gsp12-cn.ls.apple.com,Apple
+# HOST,gsp13-cn.ls.apple.com,Apple
+# HOST,gsp4-cn.ls.apple.com,Apple
+# HOST,gsp4-cn.ls.apple.com.edgekey.net,Apple
+# HOST,gsp4-cn.ls.apple.com.edgekey.net.globalredir.akadns.net,Apple
+# HOST,gsp5-cn.ls.apple.com,Apple
+# HOST,gsp85-cn-ssl.ls.apple.com,Apple
+# HOST,gspe11-2-cn-ssl.ls.apple.com,Apple
+# HOST,gspe12-cn-ssl.ls.apple.com,Apple
+# HOST,gspe19-2-cn-ssl.ls.apple.com,Apple
+# HOST,gspe19-cn-ssl.ls.apple.com,Apple
+# HOST,gspe19-cn.ls-apple.com.akadns.net,Apple
+# HOST,gspe19-cn.ls.apple.com,Apple
+# HOST,gspe21-ssl.ls.apple.com,Apple
+# HOST,gspe21.ls.apple.com,Apple
+# HOST,gspe35-ssl.ls.apple.com,Apple
+# HOST,gspe79-cn-ssl.ls.apple.com,Apple
+# HOST,gspe85-cn-ssl.ls.apple.com,Apple
 HOST,guzzoni-apple-com.v.aaplimg.com,Apple
 HOST,guzzoni.smoot.apple.com,Apple
 HOST,iadsdk.apple.com,Apple
@@ -137,7 +137,7 @@ HOST,iosapps-ssl.itunes.apple.com,Apple
 HOST,iosapps.itunes.apple.com,Apple
 HOST,iosapps.itunes.g.aaplimg.com,Apple
 HOST,ipcdn.apple.com,Apple
-HOST,iphone-ld.apple.com,Apple
+# HOST,iphone-ld.apple.com,Apple
 HOST,iphone-ld.origin-apple.com.akadns.net,Apple
 HOST,is1-ssl.mzstatic.com,Apple
 HOST,is1.mzstatic.com,Apple
@@ -163,7 +163,7 @@ HOST,music.apple.com,Apple
 HOST,ocsp-lb.apple.com.akadns.net,Apple
 HOST,ocsp.apple.com,Apple
 HOST,ocsp2-lb.apple.com.akadns.net,Apple
-HOST,ocsp2.apple.com,Apple
+# HOST,ocsp2.apple.com,Apple
 HOST,oscdn.apple.com,Apple
 HOST,oscdn.origin-apple.com.akadns.net,Apple
 HOST,osxapps.itunes.apple.com,Apple
@@ -178,7 +178,7 @@ HOST,play.itunes.apple.com,Apple
 HOST,ppq.apple.com,Apple
 HOST,probe.siri.apple.com,Apple
 HOST,prod-support.apple-support.akadns.net,Apple
-HOST,publicassets.cdn-apple.com,Apple
+# HOST,publicassets.cdn-apple.com,Apple
 HOST,push-apple.com.akadns.net,Apple
 HOST,reserve-prime.apple.com,Apple
 HOST,s.mzstatic.com,Apple
@@ -254,7 +254,7 @@ HOST,devimages-cdn.apple.com,Apple
 HOST,devstreaming-cdn.apple.com,Apple
 HOST,docs-assets.developer.apple.com,Apple
 HOST,hls.itunes.apple.com,Apple
-HOST,itunes.apple.com,Apple
+# HOST,itunes.apple.com,Apple
 HOST,js-cdn.music.apple.com,Apple
 HOST,lookup-api.apple.com,Apple
 HOST,mask-api.fe.apple-dns.net,Apple
@@ -278,7 +278,7 @@ HOST,fmipmobile.icloud.com,Apple
 HOST,statici.icloud.com,Apple
 HOST,amp-api.fitness.apple.com,Apple
 HOST,hls-svod.itunes.apple.com,Apple
-HOST,guzzoni.apple.com,Apple
+# HOST,guzzoni.apple.com,Apple
 HOST,beta.apple.com,Apple
 HOST,testflight.apple.com,Apple
 HOST,www-cdn.icloud.com.akadns.net,Apple
@@ -948,7 +948,7 @@ HOST-SUFFIX,digitalhub.com,Apple
 HOST-SUFFIX,discountbeatsbydre-us.com,Apple
 HOST-SUFFIX,discountbeatsstore.com,Apple
 HOST-SUFFIX,discussionsapple.com,Apple
-HOST-SUFFIX,dispatcher.is.autonavi.com,Apple
+# HOST-SUFFIX,dispatcher.is.autonavi.com,Apple
 HOST-SUFFIX,dkbeatsbydre.com,Apple
 HOST-SUFFIX,dot-mac.de,Apple
 HOST-SUFFIX,dotmac.de,Apple
@@ -1224,7 +1224,7 @@ HOST-SUFFIX,mybeatsbydrestudio.com,Apple
 HOST-SUFFIX,mybeatsbydreuk.com,Apple
 HOST-SUFFIX,mybeatscheapbydre.com,Apple
 HOST-SUFFIX,myferrariheadphones.com,Apple
-HOST-SUFFIX,mzstatic.com,Apple
+# HOST-SUFFIX,mzstatic.com,Apple
 HOST-SUFFIX,namemybeats.com,Apple
 HOST-SUFFIX,neborder.com,Apple
 HOST-SUFFIX,negozimonsterbeats.com,Apple
@@ -1789,7 +1789,7 @@ HOST-SUFFIX,icloud-apple.cn,Apple
 HOST-SUFFIX,icloud-content.com,Apple
 HOST-SUFFIX,icloud-isupport.com,Apple
 HOST-SUFFIX,icloud.ch,Apple
-HOST-SUFFIX,icloud.com,Apple
+# HOST-SUFFIX,icloud.com,Apple
 # HOST-SUFFIX,icloud.com.cn,Apple
 HOST-SUFFIX,icloud.de,Apple
 HOST-SUFFIX,icloud.ee,Apple
@@ -1832,7 +1832,7 @@ HOST-SUFFIX,myicloud.net,Apple
 HOST-SUFFIX,mylcloud.net,Apple
 HOST-SUFFIX,wwwicloud.com,Apple
 HOST-WILDCARD,*-content.icloud.com.cn,Apple
-HOST-WILDCARD,apple.*,Apple
+# HOST-WILDCARD,apple.*,Apple
 HOST-WILDCARD,apple.com.*,Apple
 HOST-WILDCARD,appleworldwidedeveloper.*.net,Apple
 HOST-WILDCARD,imac.*,Apple
