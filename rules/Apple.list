@@ -39,7 +39,7 @@ HOST,appleworldwidedeveloper.sc.omtrdc.net,Apple
 # APP
 # HOST,apps.mzstatic.com,Apple
 HOST,appstoreconnect.apple.com,Apple
-HOST,apptrailers.itunes.apple.com,Apple
+# HOST,apptrailers.itunes.apple.com,Apple
 # HOST,bag.itunes.apple.com,Apple
 HOST,beatselectronicsllc.tt.omtrdc.net,Apple
 HOST,beta.music.apple.com,Apple
@@ -139,16 +139,16 @@ HOST,iosapps.itunes.g.aaplimg.com,Apple
 HOST,ipcdn.apple.com,Apple
 # HOST,iphone-ld.apple.com,Apple
 HOST,iphone-ld.origin-apple.com.akadns.net,Apple
-HOST,is1-ssl.mzstatic.com,Apple
-HOST,is1.mzstatic.com,Apple
-HOST,is2-ssl.mzstatic.com,Apple
-HOST,is2.mzstatic.com,Apple
-HOST,is3-ssl.mzstatic.com,Apple
-HOST,is3.mzstatic.com,Apple
-HOST,is4-ssl.mzstatic.com,Apple
-HOST,is4.mzstatic.com,Apple
-HOST,is5-ssl.mzstatic.com,Apple
-HOST,is5.mzstatic.com,Apple
+# HOST,is1-ssl.mzstatic.com,Apple
+# HOST,is1.mzstatic.com,Apple
+# HOST,is2-ssl.mzstatic.com,Apple
+# HOST,is2.mzstatic.com,Apple
+# HOST,is3-ssl.mzstatic.com,Apple
+# HOST,is3.mzstatic.com,Apple
+# HOST,is4-ssl.mzstatic.com,Apple
+# HOST,is4.mzstatic.com,Apple
+# HOST,is5-ssl.mzstatic.com,Apple
+# HOST,is5.mzstatic.com,Apple
 HOST,itcmobile.itunes.apple.com,Apple
 HOST,itunes-apple.com.akadns.net,Apple
 HOST,itunesconnect.apple.com,Apple
@@ -160,17 +160,17 @@ HOST,mesu-china.apple.com.akadns.net,Apple
 # HOST,mesu.apple.com,Apple
 HOST,ml.cdn-apple.com,Apple
 HOST,music.apple.com,Apple
-HOST,ocsp-lb.apple.com.akadns.net,Apple
-HOST,ocsp.apple.com,Apple
-HOST,ocsp2-lb.apple.com.akadns.net,Apple
+# HOST,ocsp-lb.apple.com.akadns.net,Apple
+# HOST,ocsp.apple.com,Apple
+# HOST,ocsp2-lb.apple.com.akadns.net,Apple
 # HOST,ocsp2.apple.com,Apple
 HOST,oscdn.apple.com,Apple
 HOST,oscdn.origin-apple.com.akadns.net,Apple
 HOST,osxapps.itunes.apple.com,Apple
 HOST,osxapps.itunes.g.aaplimg.com,Apple
 HOST,p-events-delivery.akamaized.net,Apple
-HOST,pancake.apple.com,Apple
-HOST,pancake.cdn-apple.com.akadns.net,Apple
+# HOST,pancake.apple.com,Apple
+# HOST,pancake.cdn-apple.com.akadns.net,Apple
 HOST,pba0.apple.com,Apple
 # APP
 # HOST,pd.itunes.apple.com,Apple
@@ -181,7 +181,7 @@ HOST,prod-support.apple-support.akadns.net,Apple
 # HOST,publicassets.cdn-apple.com,Apple
 HOST,push-apple.com.akadns.net,Apple
 HOST,reserve-prime.apple.com,Apple
-HOST,s.mzstatic.com,Apple
+# HOST,s.mzstatic.com,Apple
 HOST,se-edge.itunes.apple.com,Apple
 HOST,se.itunes.apple.com,Apple
 HOST,se2.itunes.apple.com,Apple
@@ -1777,14 +1777,14 @@ HOST-SUFFIX,wwwapplemusic.com,Apple
 HOST-SUFFIX,apple-dns.net,Apple
 HOST-SUFFIX,apple.news,Apple
 HOST-SUFFIX,appsto.re,Apple
-HOST-SUFFIX,digicert.com,Apple
+# HOST-SUFFIX,digicert.com,Apple
 HOST-SUFFIX,apple-cloudkit.com,Apple
 HOST-SUFFIX,apple-icloud.cn,Apple
 HOST-SUFFIX,apple-livephotoskit.com,Apple
 HOST-SUFFIX,appleicloud.cn,Apple
 HOST-SUFFIX,applemx-icloud.com,Apple
 HOST-SUFFIX,apzones.com,Apple
-HOST-SUFFIX,cdn-apple.com,Apple
+# HOST-SUFFIX,cdn-apple.com,Apple
 HOST-SUFFIX,icloud-apple.cn,Apple
 HOST-SUFFIX,icloud-content.com,Apple
 HOST-SUFFIX,icloud-isupport.com,Apple
@@ -1833,11 +1833,11 @@ HOST-SUFFIX,mylcloud.net,Apple
 HOST-SUFFIX,wwwicloud.com,Apple
 HOST-WILDCARD,*-content.icloud.com.cn,Apple
 # HOST-WILDCARD,apple.*,Apple
-HOST-WILDCARD,apple.com.*,Apple
+# HOST-WILDCARD,apple.com.*,Apple
 HOST-WILDCARD,appleworldwidedeveloper.*.net,Apple
 HOST-WILDCARD,imac.*,Apple
-HOST-WILDCARD,init*.push-apple.com.akadns.net,Apple
-HOST-WILDCARD,init*.push.apple.com,Apple
+# HOST-WILDCARD,init*.push-apple.com.akadns.net,Apple
+# HOST-WILDCARD,init*.push.apple.com,Apple
 HOST-WILDCARD,ipad.*,Apple
 HOST-WILDCARD,ipadair.*,Apple
 HOST-WILDCARD,ipadmini.*,Apple
