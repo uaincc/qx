@@ -74,7 +74,7 @@ HOST,dd-cdn.origin-apple.com.akadns.net,Apple
 HOST,dejavu.apple.com,Apple
 HOST,discussionschinese.apple.com,Apple
 HOST,download.developer.apple.com,Apple
-HOST,downloaddispatch.itunes.apple.com,Apple
+# HOST,downloaddispatch.itunes.apple.com,Apple
 HOST,e16991.b.akamaiedge.net,Apple
 HOST,edge.apple,Apple
 HOST,experiments.apple.com,Apple
@@ -207,7 +207,7 @@ HOST,sync.itunes.apple.com,Apple
 HOST,tj-pod1-smp-device.apple.com,Apple
 HOST,updates-http.cdn-apple.com,Apple
 HOST,updates-http.cdn-apple.com.akadns.net,Apple
-HOST,updates.cdn-apple.com,Apple
+# HOST,updates.cdn-apple.com,Apple
 HOST,upp.itunes.apple.com,Apple
 HOST,valid.apple.com,Apple
 HOST,valid.origin-apple.com.akadns.net,Apple
