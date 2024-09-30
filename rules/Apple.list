@@ -117,11 +117,11 @@ HOST,init-p01st-lb.push-apple.com.akadns.net,Apple
 HOST,init-p01st.push.apple.com,Apple
 HOST,init-s01st-lb.push-apple.com.akadns.net,Apple
 HOST,init-s01st.push.apple.com,Apple
-HOST,init.ess.apple.com,Apple
+# HOST,init.ess.apple.com,Apple
 HOST,init.itunes.apple.com,Apple
-HOST,iosapps-ssl.itunes.apple.com,Apple
-HOST,iosapps.itunes.apple.com,Apple
-HOST,iosapps.itunes.g.aaplimg.com,Apple
+# HOST,iosapps-ssl.itunes.apple.com,Apple
+# HOST,iosapps.itunes.apple.com,Apple
+# HOST,iosapps.itunes.g.aaplimg.com,Apple
 HOST,ipcdn.apple.com,Apple
 # HOST,iphone-ld.apple.com,Apple
 HOST,iphone-ld.origin-apple.com.akadns.net,Apple
@@ -203,7 +203,7 @@ HOST,swdist.apple.com.akadns.net,Apple
 HOST,swscan-cdn.apple.com.akadns.net,Apple
 HOST,swscan.apple.com,Apple
 HOST,sylvan.apple.com,Apple
-HOST,sync.itunes.apple.com,Apple
+# HOST,sync.itunes.apple.com,Apple
 HOST,tj-pod1-smp-device.apple.com,Apple
 HOST,updates-http.cdn-apple.com,Apple
 HOST,updates-http.cdn-apple.com.akadns.net,Apple
@@ -1833,7 +1833,7 @@ HOST-WILDCARD,macbookpro.*,Apple
 HOST-KEYWORD,apple-support.akadns.net,Apple
 HOST-KEYWORD,apple.com.akadns.net,Apple
 HOST-KEYWORD,apple.com.edgekey.net,Apple
-HOST-KEYWORD,buy.itunes.apple.com,Apple
+# HOST-KEYWORD,buy.itunes.apple.com,Apple
 # HOST-KEYWORD,smp-device,Apple
 HOST-KEYWORD,testflight,Apple
 HOST-KEYWORD,icloud.com.akadns.net,Apple
