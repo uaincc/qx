@@ -46,17 +46,17 @@ HOST,cds.apple.com.akadns.net,Apple
 HOST,cdsassets.apple.com,Apple
 HOST,certs-lb.apple.com.akadns.net,Apple
 HOST,certs.apple.com,Apple
-HOST,cl1-cdn.origin-apple.com.akadns.net,Apple
-HOST,cl1.apple.com,Apple
-HOST,cl2-cn.apple.com,Apple
-HOST,cl2.apple.com,Apple
-HOST,cl3-cdn.origin-apple.com.akadns.net,Apple
-HOST,cl3.apple.com,Apple
-HOST,cl4-cdn.origin-apple.com.akadns.net,Apple
-HOST,cl4-cn.apple.com,Apple
-HOST,cl4.apple.com,Apple
-HOST,cl5-cdn.origin-apple.com.akadns.net,Apple
-HOST,cl5.apple.com,Apple
+# HOST,cl1-cdn.origin-apple.com.akadns.net,Apple
+# HOST,cl1.apple.com,Apple
+# HOST,cl2-cn.apple.com,Apple
+# HOST,cl2.apple.com,Apple
+# HOST,cl3-cdn.origin-apple.com.akadns.net,Apple
+# HOST,cl3.apple.com,Apple
+# HOST,cl4-cdn.origin-apple.com.akadns.net,Apple
+# HOST,cl4-cn.apple.com,Apple
+# HOST,cl4.apple.com,Apple
+# HOST,cl5-cdn.origin-apple.com.akadns.net,Apple
+# HOST,cl5.apple.com,Apple
 HOST,client-api.itunes.apple.com,Apple
 HOST,clientflow.apple.com,Apple
 HOST,clientflow.apple.com.akadns.net,Apple
