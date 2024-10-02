@@ -349,7 +349,7 @@ HOST-SUFFIX,apple.co.mz,Apple
 HOST-SUFFIX,apple.co.nz,Apple
 HOST-SUFFIX,apple.co.th,Apple
 HOST-SUFFIX,apple.co.uk,Apple
-HOST-SUFFIX,apple.com,Apple
+# HOST-SUFFIX,apple.com,Apple
 HOST-SUFFIX,apple.com.af,Apple
 HOST-SUFFIX,apple.com.au,Apple
 HOST-SUFFIX,apple.com.bo,Apple
