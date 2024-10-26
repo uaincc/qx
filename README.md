@@ -27,7 +27,7 @@ https://gh-proxy.com/https://raw.githubusercontent.com/uaincc/qx/main/qx.conf
 # tiktok
 在`[rewrite_local]`中添加以下重写
 ```
-(?<=_region=)CN(?=&) url 307 CN
+(?<=_region=)CN(?=&) url 307 JP
 (?<=&mcc_mnc=)4 url 307 2
 ^(https?:\/\/(tnc|dm)[\w-]+\.\w+\.com\/.+)(\?)(.+) url 302  $1$3
 (?<=\d\/\?\w{7}_\w{4}=)1[6-9]..(?=.?.?&) url 307 17
@@ -45,6 +45,6 @@ https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/Tik
 并将CN改为想看的国家/地区的2位大写英文简写
 JP（日本）｜KR（韩国）｜UK（英国）｜US（美国）｜TW（台湾）
 ```
-(?<=_region=)CN(?=&) url 307 CN
+(?<=_region=)CN(?=&) url 307 JP
 ```
 开启Quantumult X：前往Quantumult X的主页 → 找到TikTok策略 → 长按添加节点 → TikTok愉快
