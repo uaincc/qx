@@ -36,7 +36,7 @@ https://gh-proxy.com/https://raw.githubusercontent.com/uaincc/qx/main/qx.conf
 ```
 hostname = *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com
 ```
-找到`[filter_remote]`添加下句分流(无论使用方法一或是方法二，此分流都需要添加！)
+找到`[filter_remote]`添加下句分流
 ```
 https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok.list, tag=TikTok, force-policy=TikTok, update-interval=86400, opt-parser=false, enabled=true
 ```
@@ -48,3 +48,29 @@ JP（日本）｜KR（韩国）｜UK（英国）｜US（美国）｜TW（台湾�
 (?<=_region=)CN(?=&) url 307 JP
 ```
 开启Quantumult X：前往Quantumult X的主页 → 找到TikTok策略 → 长按添加节点 → TikTok愉快
+
+## 重写方法：
+
+配置文件点击编辑找到`[rewrite_remote]`添加下面对应国家的复写
+
+日本
+```
+https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok-JP.conf, tag=TikTok, update-interval=86400, opt-parser=false, enabled=true
+```
+台湾
+```
+https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok-TW.conf, tag=TikTok, update-interval=86400, opt-parser=false, enabled=true
+```
+韩国
+```
+https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok-KR.conf, tag=TikTok, update-interval=86400, opt-parser=false, enabled=true
+```
+美国
+```
+https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok-US.conf, tag=TikTok, update-interval=86400, opt-parser=false, enabled=true
+```
+
+找到`[filter_remote]`添加下句分流
+```
+https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok.list, tag=TikTok, force-policy=TikTok, update-interval=86400, opt-parser=false, enabled=true
+```
