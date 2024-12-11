@@ -40,7 +40,7 @@ proxies:
     - { name: '印度 01B8', type: ss, server: pacaio.match.qq.com.e078.com, port: 39207, cipher: chacha20-ietf-poly1305, password: db72676d-bbbd-4e3c-9612-8e70ef9de068, udp: true }
     - { name: '澳大利亚 01B8', type: ss, server: pacaio.match.qq.com.e078.com, port: 15764, cipher: chacha20-ietf-poly1305, password: db72676d-bbbd-4e3c-9612-8e70ef9de068, udp: true }
 proxy-groups:
-    - { name: EEVPN, type: select, proxies: [自动选择, 故障转移, '香港 01B8', '香港 02B8', '香港 03B8', '香港 04B0', '台湾 01B8', '台湾 02B8', '台湾 03B8', '台湾 04B0', '新加坡 01B8', '新加坡 02B8', '新加坡 03B8', '新加坡 04B0', '日本 01B8', '日本 02B8', '日本 03B8', '日本 04B0', '美国 01B8 ChatGPT', '美国 02B8 ChatGPT', '美国 03B8 ChatGPT', '美国 04B0 ChatGPT', '德国 01B8', '芬兰 01B8', '印度 01B8', '澳大利亚 01B8', 🏷官网：eevpn.com] }
+    - { name: EEVPN, type: select, proxies: [自动选择, 故障转移, '香港 01B8', '香港 02B8', '香港 03B8', '香港 04B0', '台湾 01B8', '台湾 02B8', '台湾 03B8', '台湾 04B0', '新加坡 01B8', '新加坡 02B8', '新加坡 03B8', '新加坡 04B0', '日本 01B8', '日本 02B8', '日本 03B8', '日本 04B0', '美国 01B8 ChatGPT', '美国 02B8 ChatGPT', '美国 03B8 ChatGPT', '美国 04B0 ChatGPT', '德国 01B8', '芬兰 01B8', '印度 01B8', '澳大利亚 01B8'] }
     - { name: 自动选择, type: url-test, proxies: ['香港 01B8', '香港 02B8', '香港 03B8', '香港 04B0', '台湾 01B8', '台湾 02B8', '台湾 03B8', '台湾 04B0', '新加坡 01B8', '新加坡 02B8', '新加坡 03B8', '新加坡 04B0', '日本 01B8', '日本 02B8', '日本 03B8', '日本 04B0', '美国 01B8 ChatGPT', '美国 02B8 ChatGPT', '美国 03B8 ChatGPT', '美国 04B0 ChatGPT', '德国 01B8', '芬兰 01B8', '印度 01B8', '澳大利亚 01B8'], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
     - { name: 故障转移, type: fallback, proxies: ['香港 01B8', '香港 02B8', '香港 03B8', '香港 04B0', '台湾 01B8', '台湾 02B8', '台湾 03B8', '台湾 04B0', '新加坡 01B8', '新加坡 02B8', '新加坡 03B8', '新加坡 04B0', '日本 01B8', '日本 02B8', '日本 03B8', '日本 04B0', '美国 01B8 ChatGPT', '美国 02B8 ChatGPT', '美国 03B8 ChatGPT', '美国 04B0 ChatGPT', '德国 01B8', '芬兰 01B8', '印度 01B8', '澳大利亚 01B8'], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
 rules:
@@ -553,15 +553,15 @@ rules:
     - 'IP-CIDR,17.0.0.0/8,DIRECT'
     - 'IP-CIDR,100.64.0.0/10,DIRECT'
     - 'IP-CIDR,224.0.0.0/4,DIRECT'
-    - IP-CIDR,192.168.0.0/16,DIRECT
-    - IP-CIDR,10.0.0.0/8,DIRECT
-    - IP-CIDR,172.16.0.0/12,DIRECT
-    - IP-CIDR,156.225.31.234/32,DIRECT
-    - IP-CIDR,100.64.0.0/10,DIRECT
-    - IP-CIDR6,::1/128,DIRECT
-    - IP-CIDR6,fc00::/7,DIRECT
-    - IP-CIDR6,fe80::/10,DIRECT
-    - IP-CIDR6,fd00::/8,DIRECT
+    - 'IP-CIDR,192.168.0.0/16,DIRECT'
+    - 'IP-CIDR,10.0.0.0/8,DIRECT'
+    - 'IP-CIDR,172.16.0.0/12,DIRECT'
+    - 'IP-CIDR,156.225.31.234/32,DIRECT'
+    - 'IP-CIDR,100.64.0.0/10,DIRECT'
+    - 'IP-CIDR6,::1/128,DIRECT'
+    - 'IP-CIDR6,fc00::/7,DIRECT'
+    - 'IP-CIDR6,fe80::/10,DIRECT'
+    - 'IP-CIDR6,fd00::/8,DIRECT'
     - 'IP-CIDR6,fe80::/10,DIRECT'
     - 'DOMAIN-SUFFIX,cn,DIRECT'
     - 'DOMAIN-KEYWORD,-cn,DIRECT'
