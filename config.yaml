@@ -1,49 +1,50 @@
-mixed-port: 7890
+profile:
+  tracing: true
+port: 7890
+socks-port: 7891
+#转发端口一定要配置
+redir-port: 7892
+#允许接管局域网流量
 allow-lan: true
-bind-address: '*'
+#默认代理模式
 mode: rule
-log-level: info
-external-controller: '127.0.0.1:9090'
+log-level: debug
+#接口控制端口是9090
+external-controller: :9090
+#如果服务器对公网开放可以设置密码
+secret: ""
+#配置由clash接管的dns解析
 dns:
-    enable: true
-    ipv6: false
-    default-nameserver: [223.5.5.5, 119.29.29.29]
-    enhanced-mode: fake-ip
-    fake-ip-range: 198.18.0.1/16
-    use-hosts: true
-    nameserver: ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query']
-    fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
-    fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
+  enable: true
+  #主要监听定向转发来的数据，后续会在路由表里配置转发端口为1053
+  listen: 0.0.0.0:1053
+  enhanced-mode: fake-ip
+  nameserver:
+    - "1.1.1.1"
+    - "119.29.29.29"
+  fallback:
+    - "tls://1.1.1.1:853"
+    - "tcp://1.1.1.1:53"
+    - "tcp://208.67.222.222:443"
+    - "tls://dns.google"
 proxies:
-    - { name: '香港 01B8', type: ss, server: pacaio.match.qq.com.e078.com, port: 31039, cipher: chacha20-ietf-poly1305, password: db72676d-bbbd-4e3c-9612-8e70ef9de068, udp: true }
-    - { name: '香港 02B8', type: ss, server: live-cover.msstatic.com.e078.com, port: 29802, cipher: chacha20-ietf-poly1305, password: db72676d-bbbd-4e3c-9612-8e70ef9de068, udp: true }
-    - { name: '香港 03B8', type: ss, server: i0.hdslb.com.e078.com, port: 50295, cipher: chacha20-ietf-poly1305, password: db72676d-bbbd-4e3c-9612-8e70ef9de068, udp: true }
-    - { name: '香港 04B0', type: ss, server: 120.241.40.7, port: 18060, cipher: chacha20-ietf-poly1305, password: db72676d-bbbd-4e3c-9612-8e70ef9de068, udp: true }
-    - { name: '台湾 01B8', type: ss, server: pacaio.match.qq.com.e078.com, port: 35102, cipher: chacha20-ietf-poly1305, password: db72676d-bbbd-4e3c-9612-8e70ef9de068, udp: true }
-    - { name: '台湾 02B8', type: ss, server: live-cover.msstatic.com.e078.com, port: 20191, cipher: chacha20-ietf-poly1305, password: db72676d-bbbd-4e3c-9612-8e70ef9de068, udp: true }
-    - { name: '台湾 03B8', type: ss, server: i0.hdslb.com.e078.com, port: 36090, cipher: chacha20-ietf-poly1305, password: db72676d-bbbd-4e3c-9612-8e70ef9de068, udp: true }
-    - { name: '台湾 04B0', type: ss, server: 120.241.40.7, port: 36090, cipher: chacha20-ietf-poly1305, password: db72676d-bbbd-4e3c-9612-8e70ef9de068, udp: true }
-    - { name: '新加坡 01B8', type: ss, server: pacaio.match.qq.com.e078.com, port: 13921, cipher: chacha20-ietf-poly1305, password: db72676d-bbbd-4e3c-9612-8e70ef9de068, udp: true }
-    - { name: '新加坡 02B8', type: ss, server: live-cover.msstatic.com.e078.com, port: 31026, cipher: chacha20-ietf-poly1305, password: db72676d-bbbd-4e3c-9612-8e70ef9de068, udp: true }
-    - { name: '新加坡 03B8', type: ss, server: i0.hdslb.com.e078.com, port: 13920, cipher: chacha20-ietf-poly1305, password: db72676d-bbbd-4e3c-9612-8e70ef9de068, udp: true }
-    - { name: '新加坡 04B0', type: ss, server: 120.241.40.7, port: 13920, cipher: chacha20-ietf-poly1305, password: db72676d-bbbd-4e3c-9612-8e70ef9de068, udp: true }
-    - { name: '日本 01B8', type: ss, server: pacaio.match.qq.com.e078.com, port: 29357, cipher: chacha20-ietf-poly1305, password: db72676d-bbbd-4e3c-9612-8e70ef9de068, udp: true }
-    - { name: '日本 02B8', type: ss, server: live-cover.msstatic.com.e078.com, port: 50209, cipher: chacha20-ietf-poly1305, password: db72676d-bbbd-4e3c-9612-8e70ef9de068, udp: true }
-    - { name: '日本 03B8', type: ss, server: i0.hdslb.com.e078.com, port: 50209, cipher: chacha20-ietf-poly1305, password: db72676d-bbbd-4e3c-9612-8e70ef9de068, udp: true }
-    - { name: '日本 04B0', type: ss, server: 120.241.40.7, port: 50209, cipher: chacha20-ietf-poly1305, password: db72676d-bbbd-4e3c-9612-8e70ef9de068, udp: true }
-    - { name: '美国 01B8 ChatGPT', type: ss, server: pacaio.match.qq.com.e078.com, port: 29301, cipher: chacha20-ietf-poly1305, password: db72676d-bbbd-4e3c-9612-8e70ef9de068, udp: true }
-    - { name: '美国 02B8 ChatGPT', type: ss, server: live-cover.msstatic.com.e078.com, port: 29350, cipher: chacha20-ietf-poly1305, password: db72676d-bbbd-4e3c-9612-8e70ef9de068, udp: true }
-    - { name: '美国 03B8 ChatGPT', type: ss, server: i0.hdslb.com.e078.com, port: 29350, cipher: chacha20-ietf-poly1305, password: db72676d-bbbd-4e3c-9612-8e70ef9de068, udp: true }
-    - { name: '美国 04B0 ChatGPT', type: ss, server: 120.241.40.7, port: 29350, cipher: chacha20-ietf-poly1305, password: db72676d-bbbd-4e3c-9612-8e70ef9de068, udp: true }
-    - { name: '德国 01B8', type: ss, server: pacaio.match.qq.com.e078.com, port: 57381, cipher: chacha20-ietf-poly1305, password: db72676d-bbbd-4e3c-9612-8e70ef9de068, udp: true }
-    - { name: '芬兰 01B8', type: ss, server: pacaio.match.qq.com.e078.com, port: 37382, cipher: chacha20-ietf-poly1305, password: db72676d-bbbd-4e3c-9612-8e70ef9de068, udp: true }
-    - { name: '印度 01B8', type: ss, server: pacaio.match.qq.com.e078.com, port: 39207, cipher: chacha20-ietf-poly1305, password: db72676d-bbbd-4e3c-9612-8e70ef9de068, udp: true }
-    - { name: '澳大利亚 01B8', type: ss, server: pacaio.match.qq.com.e078.com, port: 15764, cipher: chacha20-ietf-poly1305, password: db72676d-bbbd-4e3c-9612-8e70ef9de068, udp: true }
+    ...
 proxy-groups:
-    - { name: EEVPN, type: select, proxies: [自动选择, 故障转移, '香港 01B8', '香港 02B8', '香港 03B8', '香港 04B0', '台湾 01B8', '台湾 02B8', '台湾 03B8', '台湾 04B0', '新加坡 01B8', '新加坡 02B8', '新加坡 03B8', '新加坡 04B0', '日本 01B8', '日本 02B8', '日本 03B8', '日本 04B0', '美国 01B8 ChatGPT', '美国 02B8 ChatGPT', '美国 03B8 ChatGPT', '美国 04B0 ChatGPT', '德国 01B8', '芬兰 01B8', '印度 01B8', '澳大利亚 01B8'] }
-    - { name: 自动选择, type: url-test, proxies: ['香港 01B8', '香港 02B8', '香港 03B8', '香港 04B0', '台湾 01B8', '台湾 02B8', '台湾 03B8', '台湾 04B0', '新加坡 01B8', '新加坡 02B8', '新加坡 03B8', '新加坡 04B0', '日本 01B8', '日本 02B8', '日本 03B8', '日本 04B0', '美国 01B8 ChatGPT', '美国 02B8 ChatGPT', '美国 03B8 ChatGPT', '美国 04B0 ChatGPT', '德国 01B8', '芬兰 01B8', '印度 01B8', '澳大利亚 01B8'], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-    - { name: 故障转移, type: fallback, proxies: ['香港 01B8', '香港 02B8', '香港 03B8', '香港 04B0', '台湾 01B8', '台湾 02B8', '台湾 03B8', '台湾 04B0', '新加坡 01B8', '新加坡 02B8', '新加坡 03B8', '新加坡 04B0', '日本 01B8', '日本 02B8', '日本 03B8', '日本 04B0', '美国 01B8 ChatGPT', '美国 02B8 ChatGPT', '美国 03B8 ChatGPT', '美国 04B0 ChatGPT', '德国 01B8', '芬兰 01B8', '印度 01B8', '澳大利亚 01B8'], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+    ...
 rules:
+    - 'DOMAIN,mypikpak.com,EEVPN'
+    - 'DOMAIN,mypikpak.net,EEVPN'
+    - 'DOMAIN,user.mypikpak.com,EEVPN'
+    - 'DOMAIN,access.mypikpak.com,EEVPN'
+    - 'DOMAIN,api-drive.mypikpak.com,EEVPN'
+    - 'DOMAIN-KEYWORD,dl-a10b-,EEVPN'
+    - 'DOMAIN,*.themoviedb.org,EEVPN'
+    - 'DOMAIN,*.tmdb.org,EEVPN'
+    - 'DOMAIN,*.thetvdb.com,EEVPN'
+    - 'DOMAIN,*.fanart.tv,EEVPN'
+    - 'DOMAIN,api.themoviedb.org,EEVPN'
+    - 'DOMAIN,image.tmdb.org,EEVPN'
+    - 'DOMAIN,api.thetvdb.org,EEVPN'
     - 'DOMAIN,api.eehk.net,DIRECT'
     - 'DOMAIN-SUFFIX,services.googleapis.cn,EEVPN'
     - 'DOMAIN-SUFFIX,xn--ngstr-lra8j.com,EEVPN'
@@ -56,6 +57,7 @@ rules:
     - 'DOMAIN,ocsp.usertrust.com,EEVPN'
     - 'DOMAIN,ocsp.sectigo.com,EEVPN'
     - 'DOMAIN,ocsp.verisign.net,EEVPN'
+    - 'DOMAIN,alist.nn.ci,DIRECT'
     - 'DOMAIN-SUFFIX,apple-dns.net,EEVPN'
     - 'DOMAIN,testflight.apple.com,EEVPN'
     - 'DOMAIN,sandbox.itunes.apple.com,EEVPN'
@@ -560,6 +562,7 @@ rules:
     - 'IP-CIDR,100.64.0.0/10,DIRECT'
     - 'IP-CIDR6,::1/128,DIRECT'
     - 'IP-CIDR6,fc00::/7,DIRECT'
+    - 'IP-CIDR6,2409::/128,DIRECT'
     - 'IP-CIDR6,fe80::/10,DIRECT'
     - 'IP-CIDR6,fd00::/8,DIRECT'
     - 'IP-CIDR6,fe80::/10,DIRECT'
